@@ -1,1 +1,11 @@
-source: /
+title: Supplementary Material
+baseurl: "/supplementary_material"
+url: "https://mousam-bhowal.github.io"
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-minimal  # or your preferred theme
+
+# Jekyll Settings
+source: .
+destination: ./_site
