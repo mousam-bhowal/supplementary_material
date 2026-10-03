@@ -80,7 +80,7 @@ h3 {
   float:left;
 }
 
-#anav {
+.anav {
   display:block;
   color:black;
   font-size:15px;
@@ -88,7 +88,7 @@ h3 {
   padding-bottom:5px;
 }
 
-#anav:hover {
+.anav:hover {
   background-color:#4D4D4D;
   color:#FFFFFF;
 }
