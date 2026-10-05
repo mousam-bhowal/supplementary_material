@@ -1,20 +1,91 @@
----
-layout: default
-title: Model 2
----
+
 
 <!DOCTYPE html>
 
-<h3>Supplementary Material</h3>
+<html>
 
-{% include navigate1.html %}
-{% include navigate2.html %}
-{% include navigate3.html %}
+  <head>
+    <meta charset="utf-8">
+    <title>Model 2</title>
+    <link rel="stylesheet" href="../../style.css">
+  </head>
 
-<h2 style='font-size:30px; weight:400; background-color:white; text-align:left; padding-bottom:5px;'>
-Iteration 0; late phase (217.9 - 244.9 yrs)</h2>
+  <body>
+    <h3>Supplementary Material</h3>
 
-<video controls width='80%'>
-  <source src='b_run0_2.mp4' type='video/mp4'>
-  Your browser does not support this video format.
-</video>
+    <nav id='nav1'>
+      <a id='a2' href="../../index.html">Home</a>
+      <a id='a2' class='active' href="../../aug2026/index.html">
+        Aug-Dec 2026
+      </a>
+    </nav>
+    
+    <nav id='nav2'>
+      <a id='a2'></a>
+      <a id='a2' class='active' href="./index.html">
+        Model 2
+      </a>
+    </nav>
+    
+    <ul id='ulnavbar'>
+      <li id='linav'>
+        <a href='./b_run0_1.html'>
+          Iteration 0, early phase
+        </a>
+      </li>
+  
+      <li id='linav'>
+        <a class='active' href='./b_run0_2.html'>
+          Iteration 0, late phase
+        </a>
+      </li>
+  
+      <li id='linav'>
+        <a href='./b_run1_1.html'>
+          Iteration 1, early phase
+        </a>
+      </li>
+  
+      <li id='linav'>
+        <a href='./b_run1_2.html'>  
+          Iteration 1, late phase
+        </a>
+      </li>
+  
+      <li id='linav'>
+        <a href='./b_run2_1.html'>
+          Iteration 2, early phase
+        </a>
+      </li>
+  
+      <li id='linav'>
+        <a href='./b_run2_2.html'>
+          Iteration 2, late phase
+        </a>
+      </li>
+  
+      <li id='linav'>
+        <a href='./b_run3_1.html'>
+          Iteration 3, early phase
+        </a>
+      </li>
+  
+      <li id='linav'>
+        <a href='./b_run3_2.html'>
+          Iteration 3, late phase
+        </a>
+      </li>
+    </ul>
+
+    <h2 style='font-size:30px; weight:400; background-color:white; text-align:left; padding-bottom:5px; padding-left:20%; padding-top:15px;'>
+    Iteration 0; late phase (217.9 - 244.9 yrs)</h2>
+
+    <div class='center' style='float:right;width:82%;'>
+    <video controls width='90%'>
+      <source src='b_run0_2.mp4' type='video/mp4'>
+      Your browser does not support this video format.
+    </video>
+    </div>
+  </body>
+  
+</html>

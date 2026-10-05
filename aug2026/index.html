@@ -1,14 +1,27 @@
----
-layout: default
-title: Aug-Dec 2026
----
+
 
 <!DOCTYPE html>
 
-<h3>Supplementary Material</h3>
+<html>
 
-{% include navigate1.html %}
+  <head>
+    <meta charset="utf-8">
+    <title>Aug-Dec 2026</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
 
-<ul style='width=20%'>
-  <li id='li1'><a id='a1' href={{ '/aug2026/model2' | relative_url }}>Model 2</li>
-</ul>
+  <body>
+    <h3>Supplementary Material</h3>
+
+    <nav id='nav1'>
+      <a id='a2' href="../index.html">Home</a>
+      <a id='a2' class='active' href="../aug2026/index.html">
+        Aug-Dec 2026
+      </a>
+    </nav>
+
+    <ul style='width:400px;'>
+      <li id='li1'><a id='a1' href='./model2/index.html'>Model 2</li>
+    </ul>
+  </body>
+</html>

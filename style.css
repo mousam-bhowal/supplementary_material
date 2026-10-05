@@ -1,22 +1,37 @@
-h1 {
+@keyframes h1animate {
+  from {color:#00000000; letter-spacing:-0.2px;}
+  to {color:#000000FF; letter-spacing:5.5px;}
+}
+
+.h1main {
   margin:20px;
   text-align:center;
   background-color:#34C0E4;
   padding:30px;
   font-size:40px;
-  font-family:'Arial';
+  font-family:'Roboto Slab';
   font-style:normal;
-  font-weight:200;
+  font-weight:700;
+  animation-name: h1animate;
+  animation-duration:2s;
+  letter-spacing:5.5px;
 }
 
-h2 {
+@keyframes h2animate {
+  from {color:#00000000;}
+  to {color:#000000FF;}
+}
+
+.h2main {
   margin:20px;
   text-align:center;
   background-color:#34C0E466;
   padding:20px;
   font-size:20px;
-  font-family:'Arial';
+  font-family:'Roboto Slab';
   font-weight:200;
+  animation-name:h2animate;
+  animation-duration:2s;
 }
 
 h3 {
@@ -24,35 +39,67 @@ h3 {
   text-align:left;
   background-color:#34C0E4;
   padding:10px;
-  font-size:25px;
-  font-family:'Arial';
+  font-size:30px;
+  font-family:'Roboto Slab';
   font-style:normal;
-  font-weight:200;
+  font-weight:600;
+  letter-spacing:1px;
+}
+
+@keyframes hoveranimate {
+  from {background-color:#FFFFFF;color:#000000CC;}
+  to {background-color:#B9D8FF;color:#000000FF;}
 }
 
 #li1 {
   padding-top:5px;
   padding-bottom:5px;
+  
 }
 
 #a1 {
   padding-left:5px;
-  font-size:20px;
+  font-size:25px;
+  font-weight:500;
   color:blue;
+  font-family:'CMU Serif';
+  color:#000000CC;
 }
 
 #li1:hover {
   background-color:#B9D8FF;
+  animation-name:hoveranimate;
+  animation-duration:0.3s;
+}
+
+#a1:hover {
+  color:#000000FF;
 }
 
 #a2 {
+  padding:5px;
   padding-left:10px;
   padding-right:10px;
+  /*background-color:#32B940;*/
   color:#0B290E;
+  font-family:'CMU Serif';
 }
 
-#a2:hover {
+#a2.active {
+  background-color:#00000066;
+  color:#DEFFDE;
+}
+
+@keyframes navhoveranimate {
+  from {background-color:#00000000;}
+  to {background-color:#00000033;}
+}
+
+#a2:hover:not(.active) {
   background-color:#0B290E33;
+  animation-name:navhoveranimate;
+  animation-duration:0.5s;
+  background-color:#00000033;
 }
 
 #nav1 {
@@ -71,26 +118,42 @@ h3 {
   background-color:#32B94099;
 }
 
+.verticalgrad_rdbu {
+  background-image:linear-gradient(to bottom, blue, white, red);
+  opacity:0.4;
+}
+
 #ulnavbar {
   list-style-type:none;
-  margin:20px;
+  margin-left:20px;
   padding:5px; 
-  width:12%;
+  width:15%;
   background-color:#E9E9E9; 
   float:left;
 }
 
-.anav {
+#linav a {
   display:block;
   color:black;
-  font-size:15px;
-  padding-top:5px;
-  padding-bottom:5px;
+  font-size:17px;
+  padding-top:7px;
+  padding-bottom:7px;
 }
 
-.anav:hover {
+#linav a.active {
+  color:blue
+}
+
+@keyframes vertical_navanimate {
+  from {background-color:#E9E9E9; color:black;}
+  to {background-color:#4D4D4D; color:white;}
+}
+
+#linav a:hover:not(.active) {
+  animation-name:vertical_navanimate;
+  animation-duration:0.5s;
   background-color:#4D4D4D;
-  color:#FFFFFF;
+  color:white;
 }
 
 .center {
